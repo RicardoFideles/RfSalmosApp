@@ -1,21 +1,24 @@
 //
-//  AppDelegate.m
-//  RfSalmosApp
+//  SalmosAppDelegate.m
+//  app
 //
-//  Created by Ricardo jorge Fideles junior on 27/10/13.
+//  Created by Ricardo jorge Fideles junior on 03/10/13.
 //  Copyright (c) 2013 Ricardo jorge Fideles junior. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "MenuViewController.h"
+#import "SalmosViewController.h"
 
-@implementation AppDelegate
+@implementation SalmosAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self buildMenu];
+    
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -24,7 +27,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
@@ -42,5 +45,33 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+
+- (void)buildMenu {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    SalmosViewController *salmosViewController = [storyboard instantiateViewControllerWithIdentifier:@"SalmosViewController"];
+    
+    MenuViewController *menuViewController = [storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
+    
+    // menuViewController.salmosViewController = salmosViewController;
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:salmosViewController];
+    
+    NSDictionary *options = @{
+                              PKRevealControllerRecognizesPanningOnFrontViewKey : @YES,
+                              PKRevealControllerDisablesFrontViewInteractionKey : @NO
+                              };
+    
+    
+    self.revealController = [PKRevealController revealControllerWithFrontViewController:navigationController leftViewController:menuViewController options:options];
+    self.window.tintColor = [UIColor blackColor];
+    self.window.rootViewController = self.revealController;
+    
+    [[self window] makeKeyAndVisible];
+}
+
 
 @end
