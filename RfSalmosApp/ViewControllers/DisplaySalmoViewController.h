@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BannerHelper.h"
 
-@interface DisplaySalmoViewController : UITableViewController
+
+@interface DisplaySalmoViewController : UIViewController
 
 
 @property (copy, nonatomic) NSString *versiculo;

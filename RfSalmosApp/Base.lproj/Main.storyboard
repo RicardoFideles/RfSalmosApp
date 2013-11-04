@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="1" y="99"/>
         </scene>
-        <!--View Controller-->
+        <!--Display Salmo View Controller-->
         <scene sceneID="fXk-av-6Ou">
             <objects>
-                <viewController storyboardIdentifier="DisplaySalmoViewController" id="jzD-CB-hXD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DisplaySalmoViewController" id="jzD-CB-hXD" customClass="DisplaySalmoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jKP-CO-huw"/>
                         <viewControllerLayoutGuide type="bottom" id="fsp-J5-fxT"/>
@@ -139,8 +139,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdd-Ld-aat">
-                                <rect key="frame" x="139" y="273" width="42" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="188" translatesAutoresizingMaskIntoConstraints="NO" id="pdd-Ld-aat">
+                                <rect key="frame" x="66" y="220" width="188" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -149,30 +149,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="mgJ-mQ-buv">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="iJR-cC-1jW"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="iJR-cC-1jW">
+                            <connections>
+                                <action selector="share:" destination="jzD-CB-hXD" id="55M-Yx-awM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="versiculoDisplay" destination="pdd-Ld-aat" id="jTX-Q9-7OS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gap-UF-rVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="576" y="96"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="o0S-4T-bsU">
-            <objects>
-                <viewController id="cCn-d5-kTh" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aET-z3-o7J"/>
-                        <viewControllerLayoutGuide type="bottom" id="8J0-kG-Iuf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NFw-1u-R4y">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="krJ-qu-cZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="234" y="877"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LlH-wb-vue">

@@ -50,6 +50,9 @@
 {
     [super viewDidLoad];
     self.versiculoDisplay.text = self.versiculo;
+    
+    [BannerHelper showWithViewController:self];
+
 }
 
 - (void)didReceiveMemoryWarning
