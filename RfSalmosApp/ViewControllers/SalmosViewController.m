@@ -46,7 +46,7 @@
 }
 
 
-NSString *const FILENAME = @"v2";
+NSString *const FILENAME = @"salmos";
 
 NSString *const EXTENSION_OF_FILENAME = @"json";
 

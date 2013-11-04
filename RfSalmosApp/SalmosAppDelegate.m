@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Ricardo jorge Fideles junior. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "SalmosAppDelegate.h"
 #import "MenuViewController.h"
 #import "SalmosViewController.h"
 

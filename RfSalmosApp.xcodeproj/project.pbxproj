@@ -18,12 +18,13 @@
 		8C1AC5FA1823DCE800D2E500 /* ListaVersiculosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1AC5F91823DCE800D2E500 /* ListaVersiculosTableViewController.m */; };
 		8C1AC5FD1823EF7800D2E500 /* ListaSalmosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1AC5FC1823EF7800D2E500 /* ListaSalmosTableViewController.m */; };
 		8C1AC6001823F11B00D2E500 /* DisplaySalmoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1AC5FF1823F11B00D2E500 /* DisplaySalmoViewController.m */; };
+		8C1AC603182686D600D2E500 /* SalmosAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1AC602182686D600D2E500 /* SalmosAppDelegate.m */; };
+		8C1AC6051828456800D2E500 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1AC6041828456800D2E500 /* Social.framework */; };
 		8C7A6F7A181D3C620092336B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7A6F79181D3C620092336B /* Foundation.framework */; };
 		8C7A6F7C181D3C620092336B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7A6F7B181D3C620092336B /* CoreGraphics.framework */; };
 		8C7A6F7E181D3C620092336B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7A6F7D181D3C620092336B /* UIKit.framework */; };
 		8C7A6F84181D3C620092336B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C7A6F82181D3C620092336B /* InfoPlist.strings */; };
 		8C7A6F86181D3C620092336B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A6F85181D3C620092336B /* main.m */; };
-		8C7A6F8A181D3C620092336B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A6F89181D3C620092336B /* AppDelegate.m */; };
 		8C7A6F8D181D3C620092336B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7A6F8B181D3C620092336B /* Main.storyboard */; };
 		8C7A6F92181D3C620092336B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C7A6F91181D3C620092336B /* Images.xcassets */; };
 		8C7A6F99181D3C620092336B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7A6F98181D3C620092336B /* XCTest.framework */; };
@@ -66,6 +67,9 @@
 		8C1AC5FC1823EF7800D2E500 /* ListaSalmosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListaSalmosTableViewController.m; path = ViewControllers/ListaSalmosTableViewController.m; sourceTree = "<group>"; };
 		8C1AC5FE1823F11B00D2E500 /* DisplaySalmoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisplaySalmoViewController.h; path = ViewControllers/DisplaySalmoViewController.h; sourceTree = "<group>"; };
 		8C1AC5FF1823F11B00D2E500 /* DisplaySalmoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DisplaySalmoViewController.m; path = ViewControllers/DisplaySalmoViewController.m; sourceTree = "<group>"; };
+		8C1AC601182686D600D2E500 /* SalmosAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalmosAppDelegate.h; sourceTree = "<group>"; };
+		8C1AC602182686D600D2E500 /* SalmosAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalmosAppDelegate.m; sourceTree = "<group>"; };
+		8C1AC6041828456800D2E500 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		8C7A6F76181D3C620092336B /* RfSalmosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RfSalmosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7A6F79181D3C620092336B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8C7A6F7B181D3C620092336B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,8 +78,6 @@
 		8C7A6F83181D3C620092336B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C7A6F85181D3C620092336B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8C7A6F87181D3C620092336B /* RfSalmosApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RfSalmosApp-Prefix.pch"; sourceTree = "<group>"; };
-		8C7A6F88181D3C620092336B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8C7A6F89181D3C620092336B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8C7A6F8C181D3C620092336B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C7A6F91181D3C620092336B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8C7A6F97181D3C620092336B /* RfSalmosAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RfSalmosAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1AC6051828456800D2E500 /* Social.framework in Frameworks */,
 				8C7A6F7C181D3C620092336B /* CoreGraphics.framework in Frameworks */,
 				8C7A6F7E181D3C620092336B /* UIKit.framework in Frameworks */,
 				8C7A6F7A181D3C620092336B /* Foundation.framework in Frameworks */,
@@ -207,6 +210,7 @@
 		8C7A6F78181D3C620092336B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C1AC6041828456800D2E500 /* Social.framework */,
 				8C7A6F79181D3C620092336B /* Foundation.framework */,
 				8C7A6F7B181D3C620092336B /* CoreGraphics.framework */,
 				8C7A6F7D181D3C620092336B /* UIKit.framework */,
@@ -224,11 +228,11 @@
 				8C5C0E7B1820588E0029512E /* Views */,
 				8C5C0E7A182058860029512E /* Helpers */,
 				8C5C0E791820587C0029512E /* Categories */,
-				8C7A6F88181D3C620092336B /* AppDelegate.h */,
-				8C7A6F89181D3C620092336B /* AppDelegate.m */,
 				8C7A6F8B181D3C620092336B /* Main.storyboard */,
 				8C7A6F91181D3C620092336B /* Images.xcassets */,
 				8C7A6F80181D3C620092336B /* Supporting Files */,
+				8C1AC601182686D600D2E500 /* SalmosAppDelegate.h */,
+				8C1AC602182686D600D2E500 /* SalmosAppDelegate.m */,
 			);
 			path = RfSalmosApp;
 			sourceTree = "<group>";
@@ -399,10 +403,10 @@
 				8C1AC5EC1823D93A00D2E500 /* Versiculo.m in Sources */,
 				8C1AC5E91823D90900D2E500 /* Salmo.m in Sources */,
 				8C1AC5FA1823DCE800D2E500 /* ListaVersiculosTableViewController.m in Sources */,
+				8C1AC603182686D600D2E500 /* SalmosAppDelegate.m in Sources */,
 				8C1AC5F21823D9DC00D2E500 /* Salmo+Parse.m in Sources */,
 				8C1AC5E01822645500D2E500 /* SalmosViewController.m in Sources */,
 				8C1AC5F51823DA2200D2E500 /* Versiculo+Parse.m in Sources */,
-				8C7A6F8A181D3C620092336B /* AppDelegate.m in Sources */,
 				8C7A6F86181D3C620092336B /* main.m in Sources */,
 				8C1AC5FD1823EF7800D2E500 /* ListaSalmosTableViewController.m in Sources */,
 				8C1AC5E31823D81F00D2E500 /* MenuViewController.m in Sources */,
@@ -537,6 +541,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RfSalmosApp/RfSalmosApp-Prefix.pch";
 				INFOPLIST_FILE = "RfSalmosApp/RfSalmosApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -551,6 +556,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RfSalmosApp/RfSalmosApp-Prefix.pch";
 				INFOPLIST_FILE = "RfSalmosApp/RfSalmosApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
