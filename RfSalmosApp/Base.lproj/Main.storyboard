@@ -56,7 +56,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Aj-us-Z7f">
-                        <barButtonItem key="leftBarButtonItem" image="Menu" id="VPX-7b-Xq3"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="VPX-7b-Xq3">
+                            <connections>
+                                <action selector="openMenu:" destination="vXZ-lx-hvc" id="lae-7C-RaW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
