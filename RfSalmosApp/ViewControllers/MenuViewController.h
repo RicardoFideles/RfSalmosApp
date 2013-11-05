@@ -10,4 +10,7 @@
 
 @interface MenuViewController : UIViewController
 
+@property (nonatomic, copy) NSArray *configurations;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @end

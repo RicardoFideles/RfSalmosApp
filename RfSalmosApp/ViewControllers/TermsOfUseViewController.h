@@ -1,5 +1,5 @@
 //
-//  menuCell.h
+//  TermsOfUseViewController.h
 //  RfSalmosApp
 //
 //  Created by Ricardo jorge Fideles junior on 05/11/13.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface menuCell : UITableViewCell
-
-@property (weak, nonatomic) IBOutlet UILabel *label;
-
+@interface TermsOfUseViewController : UIViewController
 
 @end

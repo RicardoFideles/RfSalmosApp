@@ -34,6 +34,9 @@
 		8C7A6FA5181D3C620092336B /* RfSalmosAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A6FA4181D3C620092336B /* RfSalmosAppTests.m */; };
 		8CE9CC181829468300D33535 /* configuracoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9CC171829468300D33535 /* configuracoes.json */; };
 		8CE9CC1B182946E500D33535 /* menuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9CC1A182946E500D33535 /* menuCell.m */; };
+		8CE9CC211829512500D33535 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9CC201829512500D33535 /* Menu.m */; };
+		8CE9CC241829518800D33535 /* Menu+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9CC231829518800D33535 /* Menu+Parse.m */; };
+		8CE9CC27182952C900D33535 /* TermsOfUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9CC26182952C900D33535 /* TermsOfUseViewController.m */; };
 		F5F710A09B094DAF8298DB76 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA2C19A9B5643C7A5C26511 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +93,13 @@
 		8CE9CC171829468300D33535 /* configuracoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = configuracoes.json; path = Statics/configuracoes.json; sourceTree = "<group>"; };
 		8CE9CC19182946E500D33535 /* menuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = menuCell.h; path = Views/menuCell.h; sourceTree = "<group>"; };
 		8CE9CC1A182946E500D33535 /* menuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = menuCell.m; path = Views/menuCell.m; sourceTree = "<group>"; };
+		8CE9CC1C18294A5B00D33535 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		8CE9CC1F1829512500D33535 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Menu.h; path = Models/Menu.h; sourceTree = "<group>"; };
+		8CE9CC201829512500D33535 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Menu.m; path = Models/Menu.m; sourceTree = "<group>"; };
+		8CE9CC221829518800D33535 /* Menu+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Menu+Parse.h"; path = "Categories/Menu+Parse.h"; sourceTree = "<group>"; };
+		8CE9CC231829518800D33535 /* Menu+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Menu+Parse.m"; path = "Categories/Menu+Parse.m"; sourceTree = "<group>"; };
+		8CE9CC25182952C900D33535 /* TermsOfUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TermsOfUseViewController.h; path = ViewControllers/TermsOfUseViewController.h; sourceTree = "<group>"; };
+		8CE9CC26182952C900D33535 /* TermsOfUseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TermsOfUseViewController.m; path = ViewControllers/TermsOfUseViewController.m; sourceTree = "<group>"; };
 		C4D47E0F128649A18C4B2536 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		ECA2C19A9B5643C7A5C26511 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,6 +153,8 @@
 				8C1AC5F11823D9DC00D2E500 /* Salmo+Parse.m */,
 				8C1AC5F31823DA2200D2E500 /* Versiculo+Parse.h */,
 				8C1AC5F41823DA2200D2E500 /* Versiculo+Parse.m */,
+				8CE9CC221829518800D33535 /* Menu+Parse.h */,
+				8CE9CC231829518800D33535 /* Menu+Parse.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -172,6 +184,8 @@
 				8C1AC5E81823D90900D2E500 /* Salmo.m */,
 				8C1AC5EA1823D93A00D2E500 /* Versiculo.h */,
 				8C1AC5EB1823D93A00D2E500 /* Versiculo.m */,
+				8CE9CC1F1829512500D33535 /* Menu.h */,
+				8CE9CC201829512500D33535 /* Menu.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -189,6 +203,8 @@
 				8C1AC5FC1823EF7800D2E500 /* ListaSalmosTableViewController.m */,
 				8C1AC5FE1823F11B00D2E500 /* DisplaySalmoViewController.h */,
 				8C1AC5FF1823F11B00D2E500 /* DisplaySalmoViewController.m */,
+				8CE9CC25182952C900D33535 /* TermsOfUseViewController.h */,
+				8CE9CC26182952C900D33535 /* TermsOfUseViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -236,11 +252,12 @@
 				8C5C0E7B1820588E0029512E /* Views */,
 				8C5C0E7A182058860029512E /* Helpers */,
 				8C5C0E791820587C0029512E /* Categories */,
+				8C1AC601182686D600D2E500 /* SalmosAppDelegate.h */,
+				8C1AC602182686D600D2E500 /* SalmosAppDelegate.m */,
 				8C7A6F8B181D3C620092336B /* Main.storyboard */,
 				8C7A6F91181D3C620092336B /* Images.xcassets */,
 				8C7A6F80181D3C620092336B /* Supporting Files */,
-				8C1AC601182686D600D2E500 /* SalmosAppDelegate.h */,
-				8C1AC602182686D600D2E500 /* SalmosAppDelegate.m */,
+				8CE9CC1C18294A5B00D33535 /* Global.h */,
 			);
 			path = RfSalmosApp;
 			sourceTree = "<group>";
@@ -409,13 +426,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C1AC6001823F11B00D2E500 /* DisplaySalmoViewController.m in Sources */,
+				8CE9CC27182952C900D33535 /* TermsOfUseViewController.m in Sources */,
 				8C1AC5EC1823D93A00D2E500 /* Versiculo.m in Sources */,
 				8C1AC5E91823D90900D2E500 /* Salmo.m in Sources */,
 				8C1AC5FA1823DCE800D2E500 /* ListaVersiculosTableViewController.m in Sources */,
 				8C1AC603182686D600D2E500 /* SalmosAppDelegate.m in Sources */,
 				8CE9CC1B182946E500D33535 /* menuCell.m in Sources */,
+				8CE9CC241829518800D33535 /* Menu+Parse.m in Sources */,
 				8C1AC5F21823D9DC00D2E500 /* Salmo+Parse.m in Sources */,
 				8C1AC5E01822645500D2E500 /* SalmosViewController.m in Sources */,
+				8CE9CC211829512500D33535 /* Menu.m in Sources */,
 				8C1AC5F51823DA2200D2E500 /* Versiculo+Parse.m in Sources */,
 				8C7A6F86181D3C620092336B /* main.m in Sources */,
 				8C1AC5FD1823EF7800D2E500 /* ListaSalmosTableViewController.m in Sources */,
