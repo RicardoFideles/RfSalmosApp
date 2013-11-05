@@ -32,6 +32,8 @@
 		8C7A6F9B181D3C620092336B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7A6F7D181D3C620092336B /* UIKit.framework */; };
 		8C7A6FA3181D3C620092336B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C7A6FA1181D3C620092336B /* InfoPlist.strings */; };
 		8C7A6FA5181D3C620092336B /* RfSalmosAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A6FA4181D3C620092336B /* RfSalmosAppTests.m */; };
+		8CE9CC181829468300D33535 /* configuracoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9CC171829468300D33535 /* configuracoes.json */; };
+		8CE9CC1B182946E500D33535 /* menuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9CC1A182946E500D33535 /* menuCell.m */; };
 		F5F710A09B094DAF8298DB76 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA2C19A9B5643C7A5C26511 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,9 @@
 		8C7A6FA0181D3C620092336B /* RfSalmosAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RfSalmosAppTests-Info.plist"; sourceTree = "<group>"; };
 		8C7A6FA2181D3C620092336B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C7A6FA4181D3C620092336B /* RfSalmosAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RfSalmosAppTests.m; sourceTree = "<group>"; };
+		8CE9CC171829468300D33535 /* configuracoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = configuracoes.json; path = Statics/configuracoes.json; sourceTree = "<group>"; };
+		8CE9CC19182946E500D33535 /* menuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = menuCell.h; path = Views/menuCell.h; sourceTree = "<group>"; };
+		8CE9CC1A182946E500D33535 /* menuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = menuCell.m; path = Views/menuCell.m; sourceTree = "<group>"; };
 		C4D47E0F128649A18C4B2536 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		ECA2C19A9B5643C7A5C26511 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,6 +123,7 @@
 		8C5C0E771820582B0029512E /* Statics */ = {
 			isa = PBXGroup;
 			children = (
+				8CE9CC171829468300D33535 /* configuracoes.json */,
 				8C1AC5F61823DB1300D2E500 /* salmos.json */,
 			);
 			name = Statics;
@@ -153,6 +159,8 @@
 		8C5C0E7B1820588E0029512E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8CE9CC19182946E500D33535 /* menuCell.h */,
+				8CE9CC1A182946E500D33535 /* menuCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -344,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CE9CC181829468300D33535 /* configuracoes.json in Resources */,
 				8C7A6F92181D3C620092336B /* Images.xcassets in Resources */,
 				8C7A6F84181D3C620092336B /* InfoPlist.strings in Resources */,
 				8C1AC5F71823DB1300D2E500 /* salmos.json in Resources */,
@@ -404,6 +413,7 @@
 				8C1AC5E91823D90900D2E500 /* Salmo.m in Sources */,
 				8C1AC5FA1823DCE800D2E500 /* ListaVersiculosTableViewController.m in Sources */,
 				8C1AC603182686D600D2E500 /* SalmosAppDelegate.m in Sources */,
+				8CE9CC1B182946E500D33535 /* menuCell.m in Sources */,
 				8C1AC5F21823D9DC00D2E500 /* Salmo+Parse.m in Sources */,
 				8C1AC5E01822645500D2E500 /* SalmosViewController.m in Sources */,
 				8C1AC5F51823DA2200D2E500 /* Versiculo+Parse.m in Sources */,

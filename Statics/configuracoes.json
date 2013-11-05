@@ -1,0 +1,32 @@
+{
+    "configuracoes":[
+        {
+            "label": "Tamanho da Fonte",
+            "storyboardId": "ConfigureFontSizeViewController"
+        },
+        {
+            "label": "Compartilhe o aplicativo",
+            "storyboardId": "ShareApp"
+        },
+        {
+            "label": "Avalie o Extra Notícias",
+            "storyboardId": "EvaluateApp"
+        },
+        {
+            "label": "Fale com o Extra",
+            "storyboardId": "SendEmail"
+        },
+        {
+            "label": "Instruções de uso",
+            "storyboardId": "TutorialViewController"
+        },
+        {
+            "label": "Termos de uso",
+            "storyboardId": "TermsOfUseViewController"
+        },
+        {
+            "label":"Política de Privacidade",
+            "storyboardId": "PrivacyPolicyViewController"
+        }
+    ]
+}

@@ -20,6 +20,17 @@
                                 <rect key="frame" x="0.0" y="57" width="320" height="461"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="2ro-jm-voV">
+                                    <rect key="frame" x="0.0" y="97" width="320" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footer_logo_home" translatesAutoresizingMaskIntoConstraints="NO" id="rSO-e6-9kS" customClass="footer_logo_home">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="configurationCell" rowHeight="75" id="Sj0-ue-5o8">
                                         <rect key="frame" x="0.0" y="22" width="320" height="75"/>
@@ -225,6 +236,7 @@
     <resources>
         <image name="Menu" width="44" height="22"/>
         <image name="divider_editoria" width="320" height="2"/>
+        <image name="footer_logo_home" width="320" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
