@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MenuViewController : UIViewController
+#import <MessageUI/MessageUI.h>
+#import <sys/utsname.h>
+#import "TermsOfUseViewController.h"
+#import "Menu+Parse.h"
+#import "menuCell.h"
+#import "HexColor.h"
+@interface MenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate, MFMailComposeViewControllerDelegate>
 
 @property (nonatomic, copy) NSArray *configurations;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

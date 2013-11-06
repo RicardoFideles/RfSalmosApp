@@ -9,11 +9,11 @@
             "storyboardId": "ShareApp"
         },
         {
-            "label": "Avalie o Extra Notícias",
+            "label": "Avalie o Rf Salmos Diários",
             "storyboardId": "EvaluateApp"
         },
         {
-            "label": "Fale com o Extra",
+            "label": "Fale com o RF Salmos",
             "storyboardId": "SendEmail"
         },
         {
