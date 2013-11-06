@@ -11,6 +11,9 @@
 #import "ListaSalmosTableViewController.h"
 
 @interface SalmosViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *displaySalmoRandomico;
+@property (copy, nonatomic) Salmo *salmoRandomico;
+@property (copy, nonatomic) Versiculo *versiculoRandomico;
 
 @end
 
@@ -32,6 +35,13 @@
     
     [BannerHelper showWithViewController:self];
     
+    _salmoRandomico =  [self pickRandomSalmo];
+    
+    _versiculoRandomico = _salmoRandomico.
+    pickRandomVersiculo;
+    
+    
+    _displaySalmoRandomico.text = _versiculoRandomico.texto;
     
     
     // Criar uma visualização do tamanho padrão na parte inferior da tela.
@@ -83,6 +93,35 @@ NSString *const EXTENSION_OF_FILENAME = @"json";
     } else {
         [self.navigationController.revealController showViewController:self.navigationController.revealController.leftViewController];
     }
+}
+
+- (IBAction)share:(id)sender {
+    NSLog(@"Cliquei em compartilhar");
+    
+    NSString *text = [NSString stringWithFormat:@"%@", _displaySalmoRandomico.text];
+    
+    NSString *subject = [NSString stringWithFormat:NSLocalizedString(@"Salmos da Bíblia Sagrada", nil), _versiculoRandomico.texto];
+    
+    
+    NSArray *activityItems = @[text];
+    
+    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    
+    [activityController setValue:subject forKey:@"subject"];
+    
+    [self presentViewController:activityController animated:YES completion:nil];
+    
+    
+}
+
+- (Salmo *)pickRandomSalmo {
+    
+    Salmo *randomSalmo = nil;
+    if (self.salmos.count) {
+        unsigned index = arc4random() % self.salmos.count;
+        randomSalmo = self.salmos[index];
+    }
+    return randomSalmo;
 }
 
 /*

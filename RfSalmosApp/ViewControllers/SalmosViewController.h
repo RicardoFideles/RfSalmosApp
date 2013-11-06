@@ -18,4 +18,7 @@
 
 - (IBAction)openMenu:(id)sender;
 
+- (Salmo *)pickRandomSalmo;
+
+
 @end

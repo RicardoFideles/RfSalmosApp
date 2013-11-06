@@ -14,4 +14,8 @@
 @property (copy, nonatomic) NSString *capitulo;
 @property (strong, nonatomic) NSMutableArray *versiculos;
 
+- (Versiculo *)pickRandomVersiculo;
+
+
+
 @end

@@ -41,6 +41,18 @@
     return self;
 }
 
+- (Versiculo *)pickRandomVersiculo {
+    
+    Versiculo *randomVersiculo = nil;
+    if (self.versiculos.count) {
+        unsigned index = arc4random() % self.versiculos.count;
+        randomVersiculo = self.versiculos[index];
+    }
+    return randomVersiculo;
+}
+
+
+
 
 
 
