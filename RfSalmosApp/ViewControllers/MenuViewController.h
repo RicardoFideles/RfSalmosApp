@@ -13,12 +13,18 @@
 #import "Menu+Parse.h"
 #import "menuCell.h"
 #import "HexColor.h"
+#import "SubviewPKRevealViewController.h"
+#import "ListaSalmosTableViewController.h"
 
-@interface MenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate, MFMailComposeViewControllerDelegate>
+#import "SalmosHelper.h"
+
+@interface MenuViewController : SubviewPKRevealViewController <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate, MFMailComposeViewControllerDelegate>
 
 @property (nonatomic, copy) NSArray *configurations;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UINavigationBar *topNavBar;
 @property (weak, nonatomic) IBOutlet UILabel *labelTopNavBar;
+
+@property (nonatomic, strong) ListaSalmosTableViewController *listaSalmosTableViewController;
 
 @end

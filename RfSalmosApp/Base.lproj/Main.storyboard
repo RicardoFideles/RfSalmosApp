@@ -144,7 +144,7 @@
         <!--Lista Salmos Table View Controller-->
         <scene sceneID="Uws-d6-qLa">
             <objects>
-                <tableViewController storyboardIdentifier="ListaSalmosTableViewController" id="YJP-l8-IHS" customClass="ListaSalmosTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ListaSalmosTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YJP-l8-IHS" customClass="ListaSalmosTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="M2l-Qi-Umv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

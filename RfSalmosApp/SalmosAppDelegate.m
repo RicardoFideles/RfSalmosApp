@@ -66,7 +66,7 @@
                               };
     
     
-    self.revealController = [PKRevealController revealControllerWithFrontViewController:navigationController leftViewController:menuViewController options:options];
+    self.revealController = [SubviewPKRevealViewController revealControllerWithFrontViewController:navigationController leftViewController:menuViewController options:options];
     self.window.tintColor = [UIColor blackColor];
     self.window.rootViewController = self.revealController;
     

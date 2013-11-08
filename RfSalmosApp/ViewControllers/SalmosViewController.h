@@ -13,10 +13,11 @@
 #import "BannerHelper.h"
 #import "HexColor.h"
 #import "StyleHelper.h"
+#import "SalmosHelper.h"
 
 @interface SalmosViewController : UIViewController
 
-@property (nonatomic, strong) NSMutableArray *salmos;
+@property (nonatomic, strong) NSArray *salmos;
 
 
 - (IBAction)openMenu:(id)sender;

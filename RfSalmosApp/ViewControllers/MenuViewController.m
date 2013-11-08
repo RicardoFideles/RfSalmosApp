@@ -88,15 +88,37 @@
         }
         return;
     }
+    /*
+    
+    if ([storyboardId isEqualToString:@"
+     "]) {
+        
+        
+        UINavigationController *listaSalmosController = [[UINavigationController alloc] initWithRootViewController:self.listaSalmosTableViewController];
+        [self.revealController setFrontViewController:listaSalmosController];
+        [self.revealController showViewController:self.revealController.frontViewController];
+        
+        
+        return;
+    }
+     
+     ListaSalmosTableViewController
+      
+      */
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:storyboardId];
+    ListaSalmosTableViewController *vc = [storyboard instantiateViewControllerWithIdentifier:storyboardId];
+    
+    vc.listaSalmos = [SalmosHelper readSalmos];
     
     NSLog(@"deveria fazer algo");
     NSLog(@"Id storyBoard : %@", storyboardId);
+    
+    
+    [self.revealController setFrontViewController:vc];
+    [self.revealController showViewController:self.revealController.frontViewController];
 
     
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void) shareApp {

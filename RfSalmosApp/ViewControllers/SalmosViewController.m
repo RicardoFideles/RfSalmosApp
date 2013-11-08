@@ -23,15 +23,9 @@
 {
     [super viewDidLoad];
     
-    self.salmos = [[NSMutableArray alloc] init];
+    self.salmos = [SalmosHelper readSalmos];
     
-    NSArray *temp = [self readVersiculos];
-    
-    for (NSDictionary *salmo in temp) {
-        
-        [self.salmos addObject:[[Salmo alloc] initWithDictionary:[salmo objectForKey:@"Salmo"]]];
-        
-    }
+ 
     
     [BannerHelper showWithViewController:self];
     
@@ -54,6 +48,10 @@
     
     // Criar uma visualização do tamanho padrão na parte inferior da tela.
     
+    
+    NSLog(@"Salmos %d",[self.salmos count]);
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -72,23 +70,6 @@
     [super didReceiveMemoryWarning];
 }
 
-
-NSString *const FILENAME = @"salmos";
-
-NSString *const EXTENSION_OF_FILENAME = @"json";
-
-
-- (NSArray *)readVersiculos {
-    
-    NSString* path = [[NSBundle mainBundle] pathForResource:FILENAME
-                                                     ofType:EXTENSION_OF_FILENAME];
-    
-    NSString* content = [NSString stringWithContentsOfFile:path
-                                                  encoding:NSUTF8StringEncoding
-                                                     error:NULL];
-    
-    return [content objectFromJSONString];
-}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

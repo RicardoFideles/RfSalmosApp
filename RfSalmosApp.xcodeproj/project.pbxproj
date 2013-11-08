@@ -22,6 +22,7 @@
 		8C1AC6051828456800D2E500 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1AC6041828456800D2E500 /* Social.framework */; };
 		8C469F9C182BEDE000A8BC1B /* StyleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C469F9B182BEDE000A8BC1B /* StyleHelper.m */; };
 		8C469FA2182C638D00A8BC1B /* SubviewPKRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C469FA1182C638D00A8BC1B /* SubviewPKRevealViewController.m */; };
+		8C469FA5182D232900A8BC1B /* SalmosHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C469FA4182D232900A8BC1B /* SalmosHelper.m */; };
 		8C7A6F7A181D3C620092336B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7A6F79181D3C620092336B /* Foundation.framework */; };
 		8C7A6F7C181D3C620092336B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7A6F7B181D3C620092336B /* CoreGraphics.framework */; };
 		8C7A6F7E181D3C620092336B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7A6F7D181D3C620092336B /* UIKit.framework */; };
@@ -81,6 +82,8 @@
 		8C469F9B182BEDE000A8BC1B /* StyleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StyleHelper.m; path = Helpers/StyleHelper.m; sourceTree = "<group>"; };
 		8C469FA0182C638D00A8BC1B /* SubviewPKRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubviewPKRevealViewController.h; path = ViewControllers/SubviewPKRevealViewController.h; sourceTree = "<group>"; };
 		8C469FA1182C638D00A8BC1B /* SubviewPKRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubviewPKRevealViewController.m; path = ViewControllers/SubviewPKRevealViewController.m; sourceTree = "<group>"; };
+		8C469FA3182D232900A8BC1B /* SalmosHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SalmosHelper.h; path = Helpers/SalmosHelper.h; sourceTree = "<group>"; };
+		8C469FA4182D232900A8BC1B /* SalmosHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SalmosHelper.m; path = Helpers/SalmosHelper.m; sourceTree = "<group>"; };
 		8C7A6F76181D3C620092336B /* RfSalmosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RfSalmosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7A6F79181D3C620092336B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8C7A6F7B181D3C620092336B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -172,6 +175,8 @@
 				8C1AC5E51823D87600D2E500 /* BannerHelper.m */,
 				8C469F9A182BEDE000A8BC1B /* StyleHelper.h */,
 				8C469F9B182BEDE000A8BC1B /* StyleHelper.m */,
+				8C469FA3182D232900A8BC1B /* SalmosHelper.h */,
+				8C469FA4182D232900A8BC1B /* SalmosHelper.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -436,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C469FA2182C638D00A8BC1B /* SubviewPKRevealViewController.m in Sources */,
+				8C469FA5182D232900A8BC1B /* SalmosHelper.m in Sources */,
 				8C1AC6001823F11B00D2E500 /* DisplaySalmoViewController.m in Sources */,
 				8CE9CC27182952C900D33535 /* TermsOfUseViewController.m in Sources */,
 				8C1AC5EC1823D93A00D2E500 /* Versiculo.m in Sources */,
