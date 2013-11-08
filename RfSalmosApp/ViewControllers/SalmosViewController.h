@@ -11,6 +11,9 @@
 #import "Salmo+Parse.h"
 #import "PKRevealController.h"
 #import "BannerHelper.h"
+#import "HexColor.h"
+#import "StyleHelper.h"
+
 @interface SalmosViewController : UIViewController
 
 @property (nonatomic, strong) NSMutableArray *salmos;

@@ -13,9 +13,12 @@
 #import "Menu+Parse.h"
 #import "menuCell.h"
 #import "HexColor.h"
+
 @interface MenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate, MFMailComposeViewControllerDelegate>
 
 @property (nonatomic, copy) NSArray *configurations;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UINavigationBar *topNavBar;
+@property (weak, nonatomic) IBOutlet UILabel *labelTopNavBar;
 
 @end

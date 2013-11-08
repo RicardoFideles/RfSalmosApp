@@ -1,6 +1,11 @@
 {
     "configuracoes":[
         {
+            "label": "Salmos",
+            "storyboardId": "ListaSalmosTableViewController"
+        },
+                     
+        {
             "label": "Tamanho da Fonte",
             "storyboardId": "ConfigureFontSizeViewController"
         },

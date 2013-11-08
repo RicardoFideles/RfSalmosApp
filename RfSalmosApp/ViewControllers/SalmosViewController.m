@@ -40,7 +40,15 @@
     _versiculoRandomico = _salmoRandomico.
     pickRandomVersiculo;
     
+    _displaySalmoRandomico.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];
     
+    //NSForegroundColorAttributeName
+    
+    _displaySalmoRandomico.textColor = [UIColor whiteColor];
+    
+    
+    _displaySalmoRandomico.numberOfLines = 10;
+                                        
     _displaySalmoRandomico.text = _versiculoRandomico.texto;
     
     
@@ -48,6 +56,15 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self configureNavBar];
+
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
+}
 
 
 - (void)didReceiveMemoryWarning
@@ -122,6 +139,22 @@ NSString *const EXTENSION_OF_FILENAME = @"json";
         randomSalmo = self.salmos[index];
     }
     return randomSalmo;
+}
+
+-(void)configureNavBar {
+    
+    
+    self.navigationController.navigationBar.titleTextAttributes =     [StyleHelper estiloTop];
+;
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithHexString:@"#4bc1d2" alpha:1.0f];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.translucent = NO;
+    self.title = [@"Salmos" uppercaseString];
+
+    
+    self.view.backgroundColor = [UIColor colorWithHexString:@"#787878" alpha:1.0f];
 }
 
 /*

@@ -20,7 +20,8 @@
     
     NSLog(@"carrego a view");
     
- //   [self configureNavBar];
+   //
+    [self configureNavBar];
     
     self.configurations = [Menu configuracoes];
     
@@ -28,7 +29,12 @@
     
     self.view.backgroundColor = K_COLOR_MENU_GRAY;
     self.tableView.backgroundColor = K_COLOR_MENU_GRAY;
-
+    
+    self.topNavBar.backgroundColor = [UIColor blackColor];
+    
+    self.labelTopNavBar.text = @"teste";
+    
+    
     //comando que zera a navegacao..
     /*
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
@@ -85,6 +91,11 @@
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:storyboardId];
+    
+    NSLog(@"deveria fazer algo");
+    NSLog(@"Id storyBoard : %@", storyboardId);
+
+    
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -154,6 +165,8 @@
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithHexString:@"#212121" alpha:1.0f];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = NO;
+    
+    self.navigationController.navigationBar.backgroundColor = [UIColor blackColor];
 }
 
 #pragma ###################################################################################################################
