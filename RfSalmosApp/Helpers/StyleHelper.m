@@ -22,7 +22,6 @@
                                       [UIFont fontWithName:@"HelveticaNeue-Bold" size:20], NSFontAttributeName, nil];
     
     return textTitleOptions;
-    
 }
 
 

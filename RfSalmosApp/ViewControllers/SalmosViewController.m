@@ -31,22 +31,38 @@
     
     _salmoRandomico =  [self pickRandomSalmo];
     
-    _versiculoRandomico = _salmoRandomico.
-    pickRandomVersiculo;
+    _versiculoRandomico = _salmoRandomico.pickRandomVersiculo;
     
+    _displaySalmoRandomico.attributedText = [[NSAttributedString alloc] initWithString:_versiculoRandomico.texto attributes:[StyleHelper estiloTop]];
+   
+    /*
     _displaySalmoRandomico.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];
-    
-    //NSForegroundColorAttributeName
-    
+        
     _displaySalmoRandomico.textColor = [UIColor whiteColor];
     
-    
-    _displaySalmoRandomico.numberOfLines = 10;
+    _displaySalmoRandomico.numberOfLines = 0;
                                         
     _displaySalmoRandomico.text = _versiculoRandomico.texto;
     
     
     // Criar uma visualização do tamanho padrão na parte inferior da tela.
+    
+    NSUserDefaults *nsuDefault = [NSUserDefaults standardUserDefaults];
+    
+    NSString *salmo = [nsuDefault valueForKey:@"salmo"];
+    NSString *diaDoSalmo = [nsuDefault valueForKey:@"diaDoSalmo"];
+    
+    if (salmo) {
+        
+    } else {
+        
+    }
+     
+     */
+
+    
+    
+    
     
     
     NSLog(@"Salmos %d",[self.salmos count]);
