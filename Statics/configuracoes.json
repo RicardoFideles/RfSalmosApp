@@ -4,21 +4,16 @@
             "label": "Salmos",
             "storyboardId": "ListaSalmosTableViewController"
         },
-                     
-        {
-            "label": "Tamanho da Fonte",
-            "storyboardId": "ConfigureFontSizeViewController"
-        },
         {
             "label": "Compartilhe o aplicativo",
             "storyboardId": "ShareApp"
         },
         {
-            "label": "Avalie o Rf Salmos Diários",
+            "label": "Avalie o Salmos Diários",
             "storyboardId": "EvaluateApp"
         },
         {
-            "label": "Fale com o RF Salmos",
+            "label": "Fale com o Salmos Diários",
             "storyboardId": "SendEmail"
         },
         {
