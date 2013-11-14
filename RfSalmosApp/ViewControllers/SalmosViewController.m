@@ -11,9 +11,10 @@
 #import "ListaSalmosTableViewController.h"
 
 @interface SalmosViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *displaySalmoRandomico;
-@property (copy, nonatomic) Salmo *salmoRandomico;
-@property (copy, nonatomic) Versiculo *versiculoRandomico;
+
+@property (weak, nonatomic) IBOutlet UILabel *labelSalmo;
+@property (copy, nonatomic) Salmo *salmo;
+@property (copy, nonatomic) Versiculo *versiculo;
 
 @end
 
@@ -25,23 +26,10 @@
     
     self.salmos = [SalmosHelper readSalmos];
     
+    [self configureLabelSalmo];
+    
     [BannerHelper showWithViewController:self];
-    
-    _salmoRandomico =  [self pickRandomSalmo];
-    
-    _versiculoRandomico = _salmoRandomico.pickRandomVersiculo;
-    
-    _displaySalmoRandomico.attributedText = [[NSAttributedString alloc] initWithString:
-    _versiculoRandomico.texto attributes:[StyleHelper estiloTop]];
-   
-    
 
-    
-    
-    
-    
-    
-    NSLog(@"Salmos %d",[self.salmos count]);
     
     
 }
@@ -74,6 +62,19 @@
 }
 
 
+- (Salmo *) salmo
+{
+    _salmo = [self pickRandomSalmo];
+    return _salmo;
+}
+
+- (Versiculo *) versiculo
+{
+    _versiculo = self.salmo.pickRandomVersiculo;
+    return _versiculo;
+}
+
+
 
 - (IBAction)openMenu:(id)sender {
     if (self.navigationController.revealController.focusedController == self.navigationController.revealController.leftViewController) {
@@ -84,11 +85,10 @@
 }
 
 - (IBAction)share:(id)sender {
-    NSLog(@"Cliquei em compartilhar");
     
-    NSString *text = [NSString stringWithFormat:@"%@", _displaySalmoRandomico.text];
+    NSString *text = [NSString stringWithFormat:@"%@", self.versiculo.texto];
     
-    NSString *subject = [NSString stringWithFormat:NSLocalizedString(@"Salmos da Bíblia Sagrada", nil), _versiculoRandomico.texto];
+    NSString *subject = [NSString stringWithFormat:NSLocalizedString(@"Salmos da Bíblia Sagrada", nil), self.versiculo.texto];
     
     
     NSArray *activityItems = @[text];
@@ -133,15 +133,14 @@
 
 }
 
-/*
- 
- - (void)viewDidUnload {
- [bannerView_ release];
- }
- 
- - (void)dealloc {
- [super dealloc];
- }
- 
- */
+- (void) configureLabelSalmo {
+    
+    _labelSalmo.attributedText = [[NSAttributedString alloc]
+                                    initWithString:self.versiculo.texto
+                                        attributes:[StyleHelper estiloTop]];
+    
+}
+
+
+
 @end

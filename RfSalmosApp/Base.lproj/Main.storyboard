@@ -118,7 +118,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="displaySalmoRandomico" destination="rqJ-o0-Snl" id="fPD-hp-I3d"/>
+                        <outlet property="labelSalmo" destination="rqJ-o0-Snl" id="qky-do-mDt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
