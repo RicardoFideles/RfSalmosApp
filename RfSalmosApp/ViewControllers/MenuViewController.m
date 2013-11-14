@@ -18,34 +18,20 @@
 {
     [super viewWillAppear:animated];
     
-    NSLog(@"carrego a view");
     
-   //
     [self configureNavBar];
+    
+    [self configureBackground];
     
     self.configurations = [Menu configuracoes];
     
-    NSLog(@"configs %@", self.configurations);
-    
-    self.view.backgroundColor = K_COLOR_MENU_GRAY;
     self.tableView.backgroundColor = K_COLOR_MENU_GRAY;
-    
-    self.topNavBar.backgroundColor = [UIColor blackColor];
-    
-    self.labelTopNavBar.text = @"teste";
-    
-    
-    //comando que zera a navegacao..
-    /*
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-     */
     
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -55,7 +41,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void) executeActionFor: (NSString *)storyboardId
@@ -153,42 +138,27 @@
     
     [self presentViewController:mailer animated:YES completion:NULL];
     
-    //Usando o cliente de email nativo no lugar de MFMailCompose pois este estava causando um bug
-    /* NSString *subject = [NSString stringWithFormat:NSLocalizedString(@"inform-problem-subject", nil)];
-     NSString *mail = [NSString stringWithFormat:NSLocalizedString(@"inform-problem-to", nil)];
-     
-     NSString *systemVersion = [NSString stringWithFormat:@"Versão do iOS: %@", [[UIDevice currentDevice] systemVersion]];
-     NSString *deviceModel = [NSString stringWithFormat:@"Modelo: %@", [self getDevideModel]];
-     NSString *appVersion = [NSString stringWithFormat:@"Versão do App: %@", [[NSBundle mainBundle]
-     objectForInfoDictionaryKey:@"CFBundleVersion"]];
-     NSString *emailBody = [NSString stringWithFormat:@"%@\n%@\n%@\n\n", systemVersion, deviceModel, appVersion];
-     
-     NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"mailto:?to=%@&subject=%@&body=%@",
-     [mail stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding],
-     [subject stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
-     [emailBody stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
-     
-     [[UIApplication sharedApplication] openURL:url];*/
 }
 
--(void)configureNavBar {
-    NSShadow *shadow = [NSShadow new];
-    [shadow setShadowColor: [UIColor grayColor]];
-    [shadow setShadowOffset: CGSizeMake(0.0f, 0.0f)];
+- (void)configureNavBar {
     
-    NSDictionary *textTitleOptions = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      [UIColor whiteColor], NSForegroundColorAttributeName,
-                                      shadow, NSShadowAttributeName,
-                                      [UIFont fontWithName:@"HelveticaNeue-Bold" size:20], NSFontAttributeName, nil];
     
-    self.navigationController.navigationBar.titleTextAttributes = textTitleOptions;
+    self.navigationController.navigationBar.titleTextAttributes =   [StyleHelper estiloTop];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithHexString:@"#212121" alpha:1.0f];
+    
+    self.navigationController.navigationBar.barTintColor = K_COLOR_MENU_BLUE;
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = NO;
+    self.title = [@"Menu" uppercaseString];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     
-    self.navigationController.navigationBar.backgroundColor = [UIColor blackColor];
+}
+
+- (void) configureBackground {
+    
+    self.view.backgroundColor = K_COLOR_MENU_GRAY;
+    
 }
 
 #pragma ###################################################################################################################
@@ -200,14 +170,11 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"Linhas %d" ,[self.configurations count] );
     return [self.configurations count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    NSLog(@"preenchendo as celulas");
     
     NSString *cellIdentifier = @"menuCell";
     
@@ -224,9 +191,6 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     Menu *configuration = [self.configurations objectAtIndex:[indexPath row]];
-    
-    
-    NSLog(@"celula %@", configuration.label);
     
     [cell setBackgroundColor:K_COLOR_MENU_GRAY];
     

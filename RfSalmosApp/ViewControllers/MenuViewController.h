@@ -15,6 +15,7 @@
 #import "HexColor.h"
 #import "SubviewPKRevealViewController.h"
 #import "ListaSalmosTableViewController.h"
+#import "StyleHelper.h"
 
 #import "SalmosHelper.h"
 

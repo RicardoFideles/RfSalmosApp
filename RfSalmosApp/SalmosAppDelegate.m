@@ -60,13 +60,15 @@
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:salmosViewController];
     
+    UINavigationController *navigationControllerMenu = [[UINavigationController alloc] initWithRootViewController:menuViewController];
+    
     NSDictionary *options = @{
                               PKRevealControllerRecognizesPanningOnFrontViewKey : @YES,
                               PKRevealControllerDisablesFrontViewInteractionKey : @NO
                               };
     
     
-    self.revealController = [SubviewPKRevealViewController revealControllerWithFrontViewController:navigationController leftViewController:menuViewController options:options];
+    self.revealController = [SubviewPKRevealViewController revealControllerWithFrontViewController:navigationController leftViewController:navigationControllerMenu options:options];
     self.window.tintColor = [UIColor blackColor];
     self.window.rootViewController = self.revealController;
     
