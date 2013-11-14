@@ -25,40 +25,16 @@
     
     self.salmos = [SalmosHelper readSalmos];
     
- 
-    
     [BannerHelper showWithViewController:self];
     
     _salmoRandomico =  [self pickRandomSalmo];
     
     _versiculoRandomico = _salmoRandomico.pickRandomVersiculo;
     
-    _displaySalmoRandomico.attributedText = [[NSAttributedString alloc] initWithString:_versiculoRandomico.texto attributes:[StyleHelper estiloTop]];
+    _displaySalmoRandomico.attributedText = [[NSAttributedString alloc] initWithString:
+    _versiculoRandomico.texto attributes:[StyleHelper estiloTop]];
    
-    /*
-    _displaySalmoRandomico.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];
-        
-    _displaySalmoRandomico.textColor = [UIColor whiteColor];
     
-    _displaySalmoRandomico.numberOfLines = 0;
-                                        
-    _displaySalmoRandomico.text = _versiculoRandomico.texto;
-    
-    
-    // Criar uma visualização do tamanho padrão na parte inferior da tela.
-    
-    NSUserDefaults *nsuDefault = [NSUserDefaults standardUserDefaults];
-    
-    NSString *salmo = [nsuDefault valueForKey:@"salmo"];
-    NSString *diaDoSalmo = [nsuDefault valueForKey:@"diaDoSalmo"];
-    
-    if (salmo) {
-        
-    } else {
-        
-    }
-     
-     */
 
     
     
@@ -74,9 +50,7 @@
 {
     [super viewWillAppear:animated];
     [self configureNavBar];
-
-    
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    [self configureBackground];
     
 }
 
@@ -138,20 +112,25 @@
     return randomSalmo;
 }
 
--(void)configureNavBar {
+- (void)configureNavBar {
     
     
-    self.navigationController.navigationBar.titleTextAttributes =     [StyleHelper estiloTop];
-;
-    
+    self.navigationController.navigationBar.titleTextAttributes =   [StyleHelper estiloTop];
+
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithHexString:@"#4bc1d2" alpha:1.0f];
+    
+    self.navigationController.navigationBar.barTintColor = K_COLOR_MENU_BLUE;
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = NO;
-    self.title = [@"Salmos" uppercaseString];
+    self.title = [@"Salmos Diários" uppercaseString];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 
+}
+
+- (void) configureBackground {
     
-    self.view.backgroundColor = [UIColor colorWithHexString:@"#787878" alpha:1.0f];
+    self.view.backgroundColor = K_COLOR_VIEW_HOME;
+
 }
 
 /*

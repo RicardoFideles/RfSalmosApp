@@ -22,21 +22,9 @@
 //---------------------------
 // URL
 //---------------------------
-#define K_API_CAPA @"http://extra.globo.com/api/capa/v1/ultimas.json"
-#define K_API_EDITORIA @"http://extra.globo.com/api/v1/App/%@/conteudo.json?tiposDeConteudo=news"
-#define K_API_PHOTOGALLERY @"http://extra.globo.com/api/v1/App/ece_frontpage/conteudo.json?tiposDeConteudo=gallery,galleryVertical,superFotogaleria"
 
 
-//---------------------------
-// BANNER
-//---------------------------
-#define K_BANNER_HEIGHT 50
-#define K_BANNER_SPLASH_CODE @"x01"
-#define K_BANNER_CODE @"x33"
 
-#define K_BANNER_SEGMENT_DEFAULT @"capa"
-
-#define K_BANNER_URL @"http://ads.globo.com/RealMedia/ads/adstream_sx.ads/ogcapp/extranoticias/%@/%d@%@?ios%@"
 
 //---------------------------
 // GOOGLE ANALYTICS
@@ -78,14 +66,9 @@
 //---------------------------
 #define K_COLOR_MENU_GRAY [UIColor colorWithRed:240/255.f green:240/255.f blue:240/255.f alpha:1.0]
 
+#define K_COLOR_MENU_BLUE [UIColor colorWithHexString:@"#4bc1d2" alpha:1.0f]
 
-//---------------------------
-// IMAGE
-//---------------------------
-#define K_IMAGE_API_SIZE @"/w107h60-PROP/"
-#define K_IMAGE_BREAKING_NEWS_SIZE @"/w640h360-PROP/"
-#define K_IMAGE_THUMB_SIZE @"/w311h175-PROP/"
-
+#define K_COLOR_VIEW_HOME [UIColor colorWithHexString:@"#787878" alpha:1.0f]
 
 //---------------------------
 // FONT SIZE
