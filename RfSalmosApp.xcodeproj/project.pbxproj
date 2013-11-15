@@ -35,6 +35,7 @@
 		8C7A6F9B181D3C620092336B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7A6F7D181D3C620092336B /* UIKit.framework */; };
 		8C7A6FA3181D3C620092336B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C7A6FA1181D3C620092336B /* InfoPlist.strings */; };
 		8C7A6FA5181D3C620092336B /* RfSalmosAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A6FA4181D3C620092336B /* RfSalmosAppTests.m */; };
+		8CAE29EE1835A91800F4AD29 /* UINavigationController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE29ED1835A91800F4AD29 /* UINavigationController+Orientation.m */; };
 		8CE9CC181829468300D33535 /* configuracoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9CC171829468300D33535 /* configuracoes.json */; };
 		8CE9CC1B182946E500D33535 /* menuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9CC1A182946E500D33535 /* menuCell.m */; };
 		8CE9CC211829512500D33535 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9CC201829512500D33535 /* Menu.m */; };
@@ -99,6 +100,8 @@
 		8C7A6FA0181D3C620092336B /* RfSalmosAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RfSalmosAppTests-Info.plist"; sourceTree = "<group>"; };
 		8C7A6FA2181D3C620092336B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C7A6FA4181D3C620092336B /* RfSalmosAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RfSalmosAppTests.m; sourceTree = "<group>"; };
+		8CAE29EC1835A91800F4AD29 /* UINavigationController+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Orientation.h"; path = "Categories/UINavigationController+Orientation.h"; sourceTree = "<group>"; };
+		8CAE29ED1835A91800F4AD29 /* UINavigationController+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Orientation.m"; path = "Categories/UINavigationController+Orientation.m"; sourceTree = "<group>"; };
 		8CE9CC171829468300D33535 /* configuracoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = configuracoes.json; path = Statics/configuracoes.json; sourceTree = "<group>"; };
 		8CE9CC19182946E500D33535 /* menuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = menuCell.h; path = Views/menuCell.h; sourceTree = "<group>"; };
 		8CE9CC1A182946E500D33535 /* menuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = menuCell.m; path = Views/menuCell.m; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				8C1AC5F41823DA2200D2E500 /* Versiculo+Parse.m */,
 				8CE9CC221829518800D33535 /* Menu+Parse.h */,
 				8CE9CC231829518800D33535 /* Menu+Parse.m */,
+				8CAE29EC1835A91800F4AD29 /* UINavigationController+Orientation.h */,
+				8CAE29ED1835A91800F4AD29 /* UINavigationController+Orientation.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -448,6 +453,7 @@
 				8C469F9C182BEDE000A8BC1B /* StyleHelper.m in Sources */,
 				8C1AC5E91823D90900D2E500 /* Salmo.m in Sources */,
 				8C1AC5FA1823DCE800D2E500 /* ListaVersiculosTableViewController.m in Sources */,
+				8CAE29EE1835A91800F4AD29 /* UINavigationController+Orientation.m in Sources */,
 				8C1AC603182686D600D2E500 /* SalmosAppDelegate.m in Sources */,
 				8CE9CC1B182946E500D33535 /* menuCell.m in Sources */,
 				8CE9CC241829518800D33535 /* Menu+Parse.m in Sources */,

@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UINavigationBar *topNavBar;
 @property (weak, nonatomic) IBOutlet UILabel *labelTopNavBar;
 
-@property (nonatomic, strong) ListaSalmosTableViewController *listaSalmosTableViewController;
+@property (nonatomic, strong) ListaSalmosTableViewController *listaSamosController;
+
 
 @end

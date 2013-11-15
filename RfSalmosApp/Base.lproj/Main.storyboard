@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DBm-jE-JIu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
@@ -64,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="buR-SY-y48" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1077" y="-586"/>
+            <point key="canvasLocation" x="-1541" y="-602"/>
         </scene>
         <!--Salmos View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -98,9 +98,6 @@
                                 <state key="normal" title="Ver todos os Salmos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="YJP-l8-IHS" kind="push" identifier="listaSalmos" id="hOv-fy-f3t"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -123,12 +120,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1091" y="96"/>
+            <point key="canvasLocation" x="-1541" y="99"/>
         </scene>
         <!--Lista Salmos Table View Controller-->
         <scene sceneID="Uws-d6-qLa">
             <objects>
-                <tableViewController storyboardIdentifier="ListaSalmosTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YJP-l8-IHS" customClass="ListaSalmosTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ListaSalmosTableViewController" id="YJP-l8-IHS" customClass="ListaSalmosTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="M2l-Qi-Umv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,7 +152,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D5H-Ds-dAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-534" y="96"/>
+            <point key="canvasLocation" x="-8" y="96"/>
         </scene>
         <!--Lista Versiculos Table View Controller-->
         <scene sceneID="dAr-p3-1VI">
@@ -187,7 +184,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="saM-0d-que" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1" y="99"/>
+            <point key="canvasLocation" x="527" y="99"/>
         </scene>
         <!--Display Salmo View Controller-->
         <scene sceneID="fXk-av-6Ou">
@@ -223,25 +220,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gap-UF-rVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="576" y="96"/>
+            <point key="canvasLocation" x="1102" y="96"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="LlH-wb-vue">
+        <scene sceneID="oCu-xb-vjP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DBm-jE-JIu" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q4J-gG-U16" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qjs-Mz-sx4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wy9-Tx-tRK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="5vp-Dt-REe"/>
+                        <segue destination="YJP-l8-IHS" kind="relationship" relationship="rootViewController" id="r1g-At-GMF"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AvU-8V-yZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XDj-D7-27g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1617" y="96"/>
+            <point key="canvasLocation" x="-534" y="96"/>
         </scene>
     </scenes>
     <resources>

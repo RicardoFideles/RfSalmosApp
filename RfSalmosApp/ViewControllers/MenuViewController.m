@@ -7,6 +7,8 @@
 //
 
 #import "MenuViewController.h"
+#import "UINavigationController+Orientation.h"
+
 
 @interface MenuViewController ()
 
@@ -73,38 +75,37 @@
         }
         return;
     }
-    /*
     
-    if ([storyboardId isEqualToString:@"
-     "]) {
+    if ([storyboardId isEqualToString:@"ListaSalmosTableViewController"]) {
         
+        UINavigationController *navigationSalmosController = [[UINavigationController alloc] initWithRootViewController:self.listaSamosController];
         
-        UINavigationController *listaSalmosController = [[UINavigationController alloc] initWithRootViewController:self.listaSalmosTableViewController];
-        [self.revealController setFrontViewController:listaSalmosController];
+        NSLog(@"navi %@", navigationSalmosController);
+        
+        [self.revealController setFrontViewController:navigationSalmosController];
         [self.revealController showViewController:self.revealController.frontViewController];
-        
-        
+
         return;
-    }
-     
-     ListaSalmosTableViewController
-      
-      */
-    
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ListaSalmosTableViewController *vc = [storyboard instantiateViewControllerWithIdentifier:storyboardId];
-    
-    vc.listaSalmos = [SalmosHelper readSalmos];
-    
-    NSLog(@"deveria fazer algo");
-    NSLog(@"Id storyBoard : %@", storyboardId);
-    
-    
-    [self.revealController setFrontViewController:vc];
-    [self.revealController showViewController:self.revealController.frontViewController];
 
     
+    }
+   
 }
+
+
+- (ListaSalmosTableViewController*)listaSamosController {
+    if (!_listaSamosController) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        _listaSamosController = [storyboard instantiateViewControllerWithIdentifier:@"ListaSalmosTableViewController"];
+    }
+    
+    NSLog(@"Carregou o controller");
+    NSLog(@"controller %@", _listaSamosController);
+    
+    return _listaSamosController;
+}
+
 
 - (void) shareApp {
     NSString *text = [NSString stringWithFormat:NSLocalizedString(@"email-app-text", nil), K_APP_STORE_LINK];

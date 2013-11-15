@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Salmo+Parse.h"
+#import "SalmosHelper.h"
 
 
 @interface ListaSalmosTableViewController : UITableViewController

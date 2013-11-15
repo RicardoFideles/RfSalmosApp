@@ -27,6 +27,11 @@
 {
     [super viewDidLoad];
     
+    self.listaSalmos = [SalmosHelper readSalmos];
+    
+    self.title =
+    @"Salmos";
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
