@@ -16,6 +16,8 @@
 #import "SubviewPKRevealViewController.h"
 #import "ListaSalmosTableViewController.h"
 #import "StyleHelper.h"
+#import "SalmosViewController.h"
+#import "AboutViewController.h"
 
 #import "SalmosHelper.h"
 
@@ -26,7 +28,11 @@
 @property (weak, nonatomic) IBOutlet UINavigationBar *topNavBar;
 @property (weak, nonatomic) IBOutlet UILabel *labelTopNavBar;
 
-@property (nonatomic, strong) ListaSalmosTableViewController *listaSamosController;
+@property (nonatomic, strong) ListaSalmosTableViewController *listaSalmosTableViewController;
+
+@property (nonatomic, strong) SalmosViewController *capaController;
+
+@property (nonatomic, strong) AboutViewController *aboutViewController;
 
 
 @end

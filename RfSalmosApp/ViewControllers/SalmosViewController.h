@@ -14,8 +14,10 @@
 #import "HexColor.h"
 #import "StyleHelper.h"
 #import "SalmosHelper.h"
+#import "ListaSalmosTableViewController.h"
 
 @interface SalmosViewController : UIViewController
+
 
 @property (nonatomic, strong) NSArray *salmos;
 
@@ -23,6 +25,9 @@
 - (IBAction)openMenu:(id)sender;
 
 - (Salmo *)pickRandomSalmo;
+
+@property (nonatomic, strong) ListaSalmosTableViewController *listaSalmosTableViewController;
+
 
 
 @end

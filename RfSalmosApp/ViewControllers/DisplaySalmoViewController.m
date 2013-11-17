@@ -51,8 +51,18 @@
     [super viewDidLoad];
     self.versiculoDisplay.text = self.versiculo;
     
+
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
     [BannerHelper showWithViewController:self];
 
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -20,6 +20,28 @@
 
 @implementation SalmosViewController
 
+
+- (IBAction)clickAllSalmos:(id)sender {
+    
+    
+    UINavigationController *navigationSalmosController = [[UINavigationController alloc] initWithRootViewController:self.listaSalmosTableViewController];
+    
+    
+    [self presentViewController:navigationSalmosController animated:YES completion:nil];
+    
+    
+}
+
+- (ListaSalmosTableViewController *)listaSalmosTableViewController {
+    if (!_listaSalmosTableViewController) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        _listaSalmosTableViewController = [storyboard instantiateViewControllerWithIdentifier:@"ListaSalmosTableViewController"];
+    }
+    
+    return _listaSalmosTableViewController;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -27,9 +49,6 @@
     self.salmos = [SalmosHelper readSalmos];
     
     [self configureLabelSalmo];
-    
-    [BannerHelper showWithViewController:self];
-
     
     
 }
@@ -39,6 +58,10 @@
     [super viewWillAppear:animated];
     [self configureNavBar];
     [self configureBackground];
+    
+    
+    [BannerHelper showWithViewController:self];
+
     
 }
 
@@ -80,6 +103,7 @@
     if (self.navigationController.revealController.focusedController == self.navigationController.revealController.leftViewController) {
         [self.navigationController.revealController showViewController:self.navigationController.revealController.frontViewController];
     } else {
+        
         [self.navigationController.revealController showViewController:self.navigationController.revealController.leftViewController];
     }
 }

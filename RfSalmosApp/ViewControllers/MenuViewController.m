@@ -26,7 +26,7 @@
     [self configureBackground];
     
     self.configurations = [Menu configuracoes];
-    
+        
     self.tableView.backgroundColor = K_COLOR_MENU_GRAY;
     
 }
@@ -78,32 +78,66 @@
     
     if ([storyboardId isEqualToString:@"ListaSalmosTableViewController"]) {
         
-        UINavigationController *navigationSalmosController = [[UINavigationController alloc] initWithRootViewController:self.listaSamosController];
-        
-        NSLog(@"navi %@", navigationSalmosController);
-        
-        [self.revealController setFrontViewController:navigationSalmosController];
-        [self.revealController showViewController:self.revealController.frontViewController];
-
-        return;
+        [self.navigationController.revealController showViewController:self.navigationController.revealController.frontViewController];
 
     
+        UINavigationController *navigationSalmosController = [[UINavigationController alloc] initWithRootViewController:self.listaSalmosTableViewController];
+        
+    
+        [self presentViewController:navigationSalmosController animated:YES completion:nil];
+
+
+    }
+    
+    if ([storyboardId isEqualToString:@"AboutViewController"]) {
+        
+        [self.navigationController.revealController showViewController:self.navigationController.revealController.frontViewController];
+        
+        
+        UINavigationController *navigationSalmosController = [[UINavigationController alloc] initWithRootViewController:self.aboutViewController];
+        
+        
+        [self presentViewController:navigationSalmosController animated:YES completion:nil];
+        
+        
     }
    
 }
 
+//lazy instaciate for de controllers
 
-- (ListaSalmosTableViewController*)listaSamosController {
-    if (!_listaSamosController) {
+- (AboutViewController *)aboutViewController {
+    if (!_aboutViewController) {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         
-        _listaSamosController = [storyboard instantiateViewControllerWithIdentifier:@"ListaSalmosTableViewController"];
+        _aboutViewController = [storyboard instantiateViewControllerWithIdentifier:@"AboutViewController"];
+    }
+    
+    return _aboutViewController;
+}
+
+- (ListaSalmosTableViewController *)listaSalmosTableViewController {
+    if (!_listaSalmosTableViewController) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        _listaSalmosTableViewController = [storyboard instantiateViewControllerWithIdentifier:@"ListaSalmosTableViewController"];
+    }
+    
+    
+    return _listaSalmosTableViewController;
+}
+
+- (SalmosViewController *)capaController {
+    if (!_capaController) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        _capaController = [storyboard instantiateViewControllerWithIdentifier:@"SalmosViewController"];
     }
     
     NSLog(@"Carregou o controller");
-    NSLog(@"controller %@", _listaSamosController);
+    NSLog(@"controller %@", _capaController);
     
-    return _listaSamosController;
+    return _capaController;
 }
 
 
@@ -148,7 +182,7 @@
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    self.navigationController.navigationBar.barTintColor = K_COLOR_MENU_BLUE;
+    self.navigationController.navigationBar.barTintColor = K_COLOR_MENU_BLACK;
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = NO;
     self.title = [@"Menu" uppercaseString];
@@ -192,16 +226,20 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     Menu *configuration = [self.configurations objectAtIndex:[indexPath row]];
-    
+
     [cell setBackgroundColor:K_COLOR_MENU_GRAY];
     
     menuCell *configurationCell = (menuCell *)cell;
     configurationCell.label.text = configuration.label;
     
+    UIView *menuIndicador = configurationCell.menuIndicador;
+    
+    menuIndicador.backgroundColor = K_COLOR_MENU_BLUE;
+    
     configurationCell.label.highlightedTextColor = [UIColor whiteColor];
     
     UIView *selectionColor = [[UIView alloc] init];
-    selectionColor.backgroundColor = [UIColor colorWithHexString:@"#E40000" alpha:1.0];
+    selectionColor.backgroundColor = K_COLOR_MENU_BLUE;
     cell.selectedBackgroundView = selectionColor;
     configurationCell.selectedBackgroundView = selectionColor;
 }

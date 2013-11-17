@@ -68,6 +68,8 @@
 
 #define K_COLOR_MENU_BLUE [UIColor colorWithHexString:@"#4bc1d2" alpha:1.0f]
 
+#define K_COLOR_MENU_BLACK [UIColor colorWithHexString:@"#000000" alpha:1.0f]
+
 #define K_COLOR_VIEW_HOME [UIColor colorWithHexString:@"#787878" alpha:1.0f]
 
 //---------------------------

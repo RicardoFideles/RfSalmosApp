@@ -1,5 +1,6 @@
 {
     "configuracoes":[
+        
         {
             "label": "Salmos",
             "storyboardId": "ListaSalmosTableViewController"
@@ -17,16 +18,8 @@
             "storyboardId": "SendEmail"
         },
         {
-            "label": "Instruções de uso",
-            "storyboardId": "TutorialViewController"
-        },
-        {
-            "label": "Termos de uso",
-            "storyboardId": "TermsOfUseViewController"
-        },
-        {
-            "label":"Política de Privacidade",
-            "storyboardId": "PrivacyPolicyViewController"
+            "label": "Sobre",
+            "storyboardId": "AboutViewController"
         }
     ]
 }

@@ -31,6 +31,7 @@
 {
     [super viewDidLoad];
     
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -100,8 +101,11 @@
             title =  [title stringByAppendingString:@" : "];
             
             title = [title stringByAppendingString:[versiculo numero]];
+                        
+            dpsvc.title = [title uppercaseString];
+
             
-            dpsvc.title = title;
+            
         }
     }
 }

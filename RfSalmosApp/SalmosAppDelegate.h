@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PKRevealController.h"
+#import "SubviewPKRevealViewController.h"
 
 @interface SalmosAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (nonatomic, strong) PKRevealController *revealController;
+@property (nonatomic, strong) SubviewPKRevealViewController *revealController;
 @property (strong, nonatomic) UIWindow *window;
 
 @end

@@ -11,6 +11,7 @@
 @interface menuCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UIView *menuIndicador;
 
 
 

@@ -35,12 +35,13 @@
 		8C7A6F9B181D3C620092336B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7A6F7D181D3C620092336B /* UIKit.framework */; };
 		8C7A6FA3181D3C620092336B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C7A6FA1181D3C620092336B /* InfoPlist.strings */; };
 		8C7A6FA5181D3C620092336B /* RfSalmosAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A6FA4181D3C620092336B /* RfSalmosAppTests.m */; };
+		8C9E6A2C1839824E00A67626 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E6A2B1839824E00A67626 /* AboutViewController.m */; };
+		8C9E6A2E183984CC00A67626 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C9E6A2D183984CC00A67626 /* Localizable.strings */; };
 		8CAE29EE1835A91800F4AD29 /* UINavigationController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE29ED1835A91800F4AD29 /* UINavigationController+Orientation.m */; };
 		8CE9CC181829468300D33535 /* configuracoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9CC171829468300D33535 /* configuracoes.json */; };
 		8CE9CC1B182946E500D33535 /* menuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9CC1A182946E500D33535 /* menuCell.m */; };
 		8CE9CC211829512500D33535 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9CC201829512500D33535 /* Menu.m */; };
 		8CE9CC241829518800D33535 /* Menu+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9CC231829518800D33535 /* Menu+Parse.m */; };
-		8CE9CC27182952C900D33535 /* TermsOfUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9CC26182952C900D33535 /* TermsOfUseViewController.m */; };
 		F5F710A09B094DAF8298DB76 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA2C19A9B5643C7A5C26511 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,9 @@
 		8C7A6FA0181D3C620092336B /* RfSalmosAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RfSalmosAppTests-Info.plist"; sourceTree = "<group>"; };
 		8C7A6FA2181D3C620092336B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C7A6FA4181D3C620092336B /* RfSalmosAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RfSalmosAppTests.m; sourceTree = "<group>"; };
+		8C9E6A2A1839824E00A67626 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = ViewControllers/AboutViewController.h; sourceTree = "<group>"; };
+		8C9E6A2B1839824E00A67626 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = ViewControllers/AboutViewController.m; sourceTree = "<group>"; };
+		8C9E6A2D183984CC00A67626 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8CAE29EC1835A91800F4AD29 /* UINavigationController+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Orientation.h"; path = "Categories/UINavigationController+Orientation.h"; sourceTree = "<group>"; };
 		8CAE29ED1835A91800F4AD29 /* UINavigationController+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Orientation.m"; path = "Categories/UINavigationController+Orientation.m"; sourceTree = "<group>"; };
 		8CE9CC171829468300D33535 /* configuracoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = configuracoes.json; path = Statics/configuracoes.json; sourceTree = "<group>"; };
@@ -110,8 +114,6 @@
 		8CE9CC201829512500D33535 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Menu.m; path = Models/Menu.m; sourceTree = "<group>"; };
 		8CE9CC221829518800D33535 /* Menu+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Menu+Parse.h"; path = "Categories/Menu+Parse.h"; sourceTree = "<group>"; };
 		8CE9CC231829518800D33535 /* Menu+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Menu+Parse.m"; path = "Categories/Menu+Parse.m"; sourceTree = "<group>"; };
-		8CE9CC25182952C900D33535 /* TermsOfUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TermsOfUseViewController.h; path = ViewControllers/TermsOfUseViewController.h; sourceTree = "<group>"; };
-		8CE9CC26182952C900D33535 /* TermsOfUseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TermsOfUseViewController.m; path = ViewControllers/TermsOfUseViewController.m; sourceTree = "<group>"; };
 		C4D47E0F128649A18C4B2536 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		ECA2C19A9B5643C7A5C26511 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -221,10 +223,10 @@
 				8C1AC5FC1823EF7800D2E500 /* ListaSalmosTableViewController.m */,
 				8C1AC5FE1823F11B00D2E500 /* DisplaySalmoViewController.h */,
 				8C1AC5FF1823F11B00D2E500 /* DisplaySalmoViewController.m */,
-				8CE9CC25182952C900D33535 /* TermsOfUseViewController.h */,
-				8CE9CC26182952C900D33535 /* TermsOfUseViewController.m */,
 				8C469FA0182C638D00A8BC1B /* SubviewPKRevealViewController.h */,
 				8C469FA1182C638D00A8BC1B /* SubviewPKRevealViewController.m */,
+				8C9E6A2A1839824E00A67626 /* AboutViewController.h */,
+				8C9E6A2B1839824E00A67626 /* AboutViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -285,6 +287,7 @@
 		8C7A6F80181D3C620092336B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8C9E6A2D183984CC00A67626 /* Localizable.strings */,
 				8C7A6F81181D3C620092336B /* RfSalmosApp-Info.plist */,
 				8C7A6F82181D3C620092336B /* InfoPlist.strings */,
 				8C7A6F85181D3C620092336B /* main.m */,
@@ -390,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CE9CC181829468300D33535 /* configuracoes.json in Resources */,
+				8C9E6A2E183984CC00A67626 /* Localizable.strings in Resources */,
 				8C7A6F92181D3C620092336B /* Images.xcassets in Resources */,
 				8C7A6F84181D3C620092336B /* InfoPlist.strings in Resources */,
 				8C1AC5F71823DB1300D2E500 /* salmos.json in Resources */,
@@ -448,10 +452,10 @@
 				8C469FA2182C638D00A8BC1B /* SubviewPKRevealViewController.m in Sources */,
 				8C469FA5182D232900A8BC1B /* SalmosHelper.m in Sources */,
 				8C1AC6001823F11B00D2E500 /* DisplaySalmoViewController.m in Sources */,
-				8CE9CC27182952C900D33535 /* TermsOfUseViewController.m in Sources */,
 				8C1AC5EC1823D93A00D2E500 /* Versiculo.m in Sources */,
 				8C469F9C182BEDE000A8BC1B /* StyleHelper.m in Sources */,
 				8C1AC5E91823D90900D2E500 /* Salmo.m in Sources */,
+				8C9E6A2C1839824E00A67626 /* AboutViewController.m in Sources */,
 				8C1AC5FA1823DCE800D2E500 /* ListaVersiculosTableViewController.m in Sources */,
 				8CAE29EE1835A91800F4AD29 /* UINavigationController+Orientation.m in Sources */,
 				8C1AC603182686D600D2E500 /* SalmosAppDelegate.m in Sources */,

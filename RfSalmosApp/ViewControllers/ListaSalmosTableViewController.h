@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Salmo+Parse.h"
 #import "SalmosHelper.h"
-
+#import "StyleHelper.h"
+#import "HexColor.h"
 
 @interface ListaSalmosTableViewController : UITableViewController
 
